@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">Books app</a>
+        </div>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <form class="card card-body" id="book-form">
+                    <div class="form-group">
+                        <input type="text" id="title" placeholder="Book title" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="author" class="form-control" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="isbn" class="form-control" placeholder="ISBN">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="image">
+                            <label for="image" class="custom-file-label">Choose Image</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">
+                        Save book
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-8 justify-item-center col-sm-12 font-size">
+                <h1>Books</h1>
+                <div class="justify-item-center mt-0" id="books-cards"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
